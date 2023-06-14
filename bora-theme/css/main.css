@@ -1,0 +1,30 @@
+:root {
+    --font-gasoek: 'Gasoek One', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: {{ theme.off_white.color }};
+    font-family: var(--font-poppins);
+    font-size: 16px;
+
+}
+
+h1, h2, h3 {
+    font-family: var(--font-gasoek);
+    color: {{ theme.blueberry.color }};
+}
+
+.page-wrap {
+    color: {{ theme.blueberry.color }};
+    max-width: 1000px;
+    padding: 1em;
+    min-height: 100vh;
+}
+
+header {
+    background-image: url({{ get_asset_url('../images/FyJdXdqaYAEQzzn.jpeg') }});
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,42 @@
+[
+    {
+        "label": "Off-White",
+        "name": "off_white",
+        "type": "color",
+        "default": {
+            "color": "#f9ecfb"
+        }
+    },
+    {
+        "label": "Grape",
+        "name": "grape",
+        "type": "color",
+        "default": {
+            "color": "#6c5898"
+        }
+    },
+    {
+        "label": "Orchid",
+        "name": "orchid",
+        "type": "color",
+        "default": {
+            "color": "#9c19ea"
+        }
+    },
+    {
+        "label": "Blueberry",
+        "name": "blueberry",
+        "type": "color",
+        "default": {
+            "color": "#5305b8"
+        }
+    },
+    {
+        "label": "Lilac",
+        "name": "lilac",
+        "type": "color",
+        "default": {
+            "color": "#a889ec"
+        }
+    }
+]
