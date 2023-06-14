@@ -1,39 +1,31 @@
 [
     {
-        "label": "Off-White",
-        "name": "off_white",
+        "label": "Background Color",
+        "name": "bg_color",
         "type": "color",
         "default": {
             "color": "#f9ecfb"
         }
     },
     {
-        "label": "Grape",
-        "name": "grape",
+        "label": "Text Color",
+        "name": "text_color",
         "type": "color",
         "default": {
             "color": "#6c5898"
         }
     },
     {
-        "label": "Orchid",
-        "name": "orchid",
-        "type": "color",
-        "default": {
-            "color": "#9c19ea"
-        }
-    },
-    {
-        "label": "Blueberry",
-        "name": "blueberry",
+        "label": "Heading Color",
+        "name": "heading_color",
         "type": "color",
         "default": {
             "color": "#5305b8"
         }
     },
     {
-        "label": "Lilac",
-        "name": "lilac",
+        "label": "Footer Background",
+        "name": "footer_bg",
         "type": "color",
         "default": {
             "color": "#a889ec"

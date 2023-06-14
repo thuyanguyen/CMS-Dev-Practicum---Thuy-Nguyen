@@ -6,7 +6,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: {{ theme.off_white.color }};
+    background-color: {{ theme.bg_color.color }};
     font-family: var(--font-poppins);
     font-size: 16px;
 
@@ -14,17 +14,40 @@ html, body {
 
 h1, h2, h3 {
     font-family: var(--font-gasoek);
-    color: {{ theme.blueberry.color }};
+    color: {{ theme.heading_color.color }};
+    letter-spacing: .15rem;
+    margin: 1.3rem 0;
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 .page-wrap {
-    color: {{ theme.blueberry.color }};
-    max-width: 1000px;
-    padding: 1em;
-    min-height: 100vh;
+    color: {{ theme.text_color.color }};
+    height: 100vh;
+    margin: 60px;
+
 }
 
 header {
-    background-image: url({{ get_asset_url('../images/FyJdXdqaYAEQzzn.jpeg') }});
+    background-image: url({{ get_asset_url('../images/chairs.jpeg') }});
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 65%;
+    height: 20vh;
+    max-height: 200px;
+    padding: 2rem;
+}
+
+footer {
+    background-color: {{ theme.footer_bg.color }};
+    color: {{ theme.bg_color.color }};
+    padding: 2rem;
+    height: 20px;
+}
+
+footer p {
+    margin: auto 2px;
+
 }
