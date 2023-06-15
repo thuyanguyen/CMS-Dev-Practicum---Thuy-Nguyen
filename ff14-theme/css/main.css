@@ -1,0 +1,53 @@
+/* Generic
+Resetting box-sizing property
+*/
+
+{% include './generic/_reset.css' %}
+
+/* Objects */
+
+{% include './objects/_layout.css' %}
+{% include './objects/_containers-dnd.css' %}
+
+/* Elements 
+Base HTML typography styles 
+*/
+
+{% include './elements/_typography.css' %}
+
+/* Components
+Global partial styling
+*/
+
+{% include './components/_header.css' %}
+
+
+/* Theme specific styling 
+Includes setting font-family and theme colors
+*/
+{##### Variables #####}
+
+/* Colors */
+{% set primary_color = theme.global_colors.primary.color %}
+{% set secondary_color = theme.global_colors.secondary.color %}
+{% set accent_color = theme.global_colors.accent.color %}
+
+/* Font-family and set text default color*/
+html {
+font-family: 'Inter', sans-serif;
+color: {{ secondary_color }};
+}
+
+/* Heading color */
+h1, 
+h2 {
+    color: {{ accent_color }};
+}
+
+h3,
+h4,
+h5,
+h6 {
+    color: {{ primary_color }};
+}
+

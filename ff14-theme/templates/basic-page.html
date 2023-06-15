@@ -9,11 +9,22 @@
     <meta charset="utf-8">
     <title>{{ content.html_title }}</title>
     <meta name="description" content="{{ content.meta_description }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    {{ require_css(get_asset_url('../css/main.css')) }}
+
     {{ standard_header_includes }}
   </head>
   <body>
-    {% module "page_template_logo" path="@hubspot/logo" label="Logo" %}
-    {% module "page_template_rich_text" path="@hubspot/rich_text" label="Rich Text" %}
+    
+    {% global_partial path="./partials/header.html" %}
+
+    <main>
+      <p>some text</p>
+    </main>
+
     {{ standard_footer_includes }}
   </body>
 </html>

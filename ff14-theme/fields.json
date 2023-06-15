@@ -1,0 +1,33 @@
+[
+    {
+        "label": "Global colors",
+        "name": "global_colors",
+        "type": "group",
+        "children": [
+            {
+                "label": "Primary",
+                "name": "primary",
+                "type": "color",
+                "default": {
+                    "color": "#0081A7"
+                }
+            },
+            {
+                "label": "Secondary",
+                "name": "secondary",
+                "type": "color",
+                "default": {
+                    "color": "#00AFB9"
+                }
+            },
+            {
+                "label": "Accent",
+                "name": "accent",
+                "type": "color",
+                "default": {
+                    "color": "#F07167"
+                }
+            }
+        ]
+    }
+]

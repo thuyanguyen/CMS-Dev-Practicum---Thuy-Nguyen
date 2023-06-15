@@ -1,0 +1,34 @@
+/* Setting the basic properties for type-based elements
+*/
+
+body {
+    line-height: 1.4;
+    overflow-wrap: break-word;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    margin: 0 0 1.6rem;
+}
+
+/* Anchors */
+a {
+    cursor: pointer;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 1.6rem;
+}
+
+/* Image alt text */
+img {
+    font-size: 0.6rem;
+    word-break: normal;
+}

@@ -1,0 +1,4 @@
+header {
+    height: 30vh;
+    background: url({{ get_asset_url('../../images/ffxiv-characters.jpg') }}) no-repeat 50% bottom / cover;
+}
