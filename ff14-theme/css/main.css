@@ -4,6 +4,11 @@ Resetting box-sizing property
 
 {% include './generic/_reset.css' %}
 
+main {
+    width: 80vw;
+    margin: 0 auto;
+}
+
 /* Objects */
 
 {% include './objects/_layout.css' %}
@@ -15,13 +20,6 @@ Base HTML typography styles
 
 {% include './elements/_typography.css' %}
 
-/* Components
-Global partial styling
-*/
-
-{% include './components/_header.css' %}
-
-
 /* Theme specific styling 
 Includes setting font-family and theme colors
 */
@@ -31,6 +29,7 @@ Includes setting font-family and theme colors
 {% set primary_color = theme.global_colors.primary.color %}
 {% set secondary_color = theme.global_colors.secondary.color %}
 {% set accent_color = theme.global_colors.accent.color %}
+{% set light_accent = theme.global_colors.accent_2.color %}
 
 /* Font-family and set text default color*/
 html {
@@ -50,4 +49,11 @@ h5,
 h6 {
     color: {{ primary_color }};
 }
+
+/* Components */
+
+{% include './components/_header.css' %}
+{% include './components/_two-col-feature.css' %}
+
+
 

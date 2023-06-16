@@ -27,6 +27,15 @@
                 "default": {
                     "color": "#F07167"
                 }
+            },
+            {
+                "label":"Accent 2",
+                "name": "accent_2",
+                "type":"color",
+                "default":{
+                    "color": "#FDFCDC"
+                }
+
             }
         ]
     }

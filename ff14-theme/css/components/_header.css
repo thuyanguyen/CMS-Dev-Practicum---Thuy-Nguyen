@@ -1,4 +1,21 @@
 header {
-    height: 30vh;
     background: url({{ get_asset_url('../../images/ffxiv-characters.jpg') }}) no-repeat 50% bottom / cover;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: end;
+    padding: 0 0 1.2rem 1.2rem;
+}
+
+.header-main {
+    font-size: 4rem; 
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.header-tag {
+    color: {{ theme.global_colors.accent_2.color }};
+    font-size: 1.3rem;
+    font-style: italic;
 }

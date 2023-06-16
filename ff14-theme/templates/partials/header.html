@@ -6,10 +6,14 @@
 <!-- Begin partial -->
 
 <header>
-    <h1 class="main-heading">
+    <h1 class="header-main">
         {% module "header_text" path="@hubspot/text" label="Main header" value="Final Fantasy XIV" %}
     </h1>
-    {% module "header_quote" path="@hubspot/text" label="Header quote" value="Such devastation was not my intention" %}
+    {% module_block module "one_line_text" path="@hubspot/rich_text" label="Header tagline" %}
+        {% module_attribute "html" %}
+            <p class="header-tag">Such devastation was not my intention</p>
+        {% end_module_attribute %}
+    {% end_module_block %}
 </header>
 
 <!-- End partial -->

@@ -1,6 +1,6 @@
 <!--
     templateType: page
-    label: Page template
+    label: Basic Page
     isAvailableForNewContent: true
 -->
 <!doctype html>
@@ -8,21 +8,59 @@
   <head>
     <meta charset="utf-8">
     <title>{{ content.html_title }}</title>
-    <meta name="description" content="{{ content.meta_description }}">
+    <meta name="description" content="{{ page_meta.meta_description }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     {{ require_css(get_asset_url('../css/main.css')) }}
 
     {{ standard_header_includes }}
   </head>
+
   <body>
     
     {% global_partial path="./partials/header.html" %}
 
     <main>
-      <p>some text</p>
+      <section class="two-col-feature">
+        <h2 class="two-col-feature--title">
+          Play for free!
+        </h2>
+        {% dnd_area "feature_dnd" label="Feature dnd"%}
+          {% dnd_section vertical_alignment='MIDDLE', padding={
+            top: 20,
+            right: 20,
+            bottom: 20,
+            left: 20
+          } %}
+
+            {% dnd_module "feature_image" path="@hubspot/image" label="Feature image" width=7, vertical_alignment='MIDDLE', horizontal_alignment='CENTER' img={
+              "src": "../images/promo.png",
+              "alt": "Five adventurers riding large birds, running across a grassy canyon environment",
+              "loading": "lazy",
+              "width": 849,
+              "height": 445
+            }  %}
+            {% end_dnd_module %}
+          
+            {% dnd_module "feature_text" path="@hubspot/rich_text" label="Feature text" width=5, offset=7, vertical_alignment='TOP', horizontal_alignment='LEFT'  %}
+              {% module_attribute "html" %}
+                <h3 class="two-col-feature---heading">
+                  Over 100 hours of fun!
+                </h3>
+                <p class="two-col-feature--text">
+                  Have you heard of the critically acclaimed MMORPG Final Fantasy XIV? With an expanded free trial which you can play through the entirety of A Realm Reborn and 
+                  the award-winning Heavensward expansion up to level 60 for free with no restrictions on playtime.
+                </p>
+              {% end_module_attribute %}
+            {% end_dnd_module %}
+
+
+          {% end_dnd_section %}
+        {% end_dnd_area %}
+      </section>
+
     </main>
 
     {{ standard_footer_includes }}
