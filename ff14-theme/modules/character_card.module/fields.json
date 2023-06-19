@@ -1,11 +1,17 @@
 [
   {
-    "default": "<h1>Hello, world!</h1>",
-    "label": "Rich text field",
-    "locked": false,
-    "name": "text",
-    "required": false,
-    "type": "richtext",
-    "validation_regex": ""
+    "name": "card_img",
+    "Label": "Character Image",
+    "type": "image",
+    "default": {
+      "src":"https://static.hubspot.com/final/img/content/email-template-images/placeholder_200x200.png",
+      "alt": "placeholder_200x200",
+      "loading":"disabled",
+      "width": 200,
+      "height": 200
+    }
+  },
+  {
+    "name":"card_text"
   }
 ]
