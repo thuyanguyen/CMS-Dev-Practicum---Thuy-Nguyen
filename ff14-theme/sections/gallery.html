@@ -1,0 +1,10 @@
+<!--
+    templateType: section
+    label: Image gallery
+    isAvailableForNewContent: true
+-->
+
+{% dnd_section background_color={{ context.color || "#fff" }} %}
+  {% dnd_module path="../modules/character_gallery" %}
+  {% end_dnd_module %}
+{% end_dnd_section %}

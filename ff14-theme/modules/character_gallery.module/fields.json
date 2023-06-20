@@ -1,0 +1,85 @@
+[ {
+  "id" : "c1675704-1b61-a1fd-533e-dc6aa334801b",
+  "name" : "character_card",
+  "display_width" : null,
+  "label" : "Character Card",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 2,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "c59b3359-8ea8-c9fb-5b6d-c307281cb9d9",
+    "name" : "character_img",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.refuelcreative.com.au/hubfs/Imported%20images/jpg-1.jpeg",
+      "alt" : "1000x800 pixel placeholder",
+      "loading" : "lazy",
+      "width" : 1000,
+      "height" : 800,
+      "max_width" : 1000,
+      "max_height" : 800
+    }
+  }, {
+    "id" : "a179ca1f-1eed-63ee-4ffd-6d5074c4af26",
+    "name" : "character_description",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3>Character name</h3>\n<p>Description of character</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "character_img" : {
+      "size_type" : "auto",
+      "src" : "https://www.refuelcreative.com.au/hubfs/Imported%20images/jpg-1.jpeg",
+      "alt" : "1000x800 pixel placeholder",
+      "loading" : "lazy",
+      "width" : 1000,
+      "height" : 800,
+      "max_width" : 1000,
+      "max_height" : 800
+    },
+    "character_description" : "<h3>Character name</h3>\n<p>Description of character</p>"
+  }, {
+    "character_img" : {
+      "size_type" : "auto",
+      "src" : "https://www.refuelcreative.com.au/hubfs/Imported%20images/jpg-1.jpeg",
+      "alt" : "1000x800 pixel placeholder",
+      "loading" : "lazy",
+      "width" : 1000,
+      "height" : 800,
+      "max_width" : 1000,
+      "max_height" : 800
+    },
+    "character_description" : "<h3>Character name</h3>\n<p>Description of character</p>"
+  }, {
+    "character_img" : {
+      "size_type" : "auto",
+      "src" : "https://www.refuelcreative.com.au/hubfs/Imported%20images/jpg-1.jpeg",
+      "alt" : "1000x800 pixel placeholder",
+      "loading" : "lazy",
+      "width" : 1000,
+      "height" : 800,
+      "max_width" : 1000,
+      "max_height" : 800
+    },
+    "character_description" : "<h3>Character name</h3>\n<p>Description of character</p>"
+  } ]
+} ]

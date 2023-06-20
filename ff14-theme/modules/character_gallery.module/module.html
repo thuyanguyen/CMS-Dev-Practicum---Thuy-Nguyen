@@ -1,0 +1,19 @@
+<div class="character-container">
+  {% for item in module.character_card %}
+  
+  <div class="character-container__content">
+    {% if item.character_img.src %}
+      {% set sizeAttrs = 'width="{{ item.character_img.width }}" height="{{ item.character_img.height }}"' %}
+      {% if item.character_img.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ item.character_img.width }}" height="{{ item.character_img.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif item.character_img.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item.character_img.max_width }}" height="{{ item.character_img.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+       {% set loadingAttr = item.character_img.loading != 'disabled' ? 'loading="{{ item.character_img.loading }}"' : '' %}
+      <img src="{{ item.character_img.src }}" alt="{{ item.character_img.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+    {% inline_rich_text field="character_description" value="{{ item.character_description }}" %}
+  </div>
+    
+  {% endfor %}
+</div>

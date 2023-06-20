@@ -1,0 +1,35 @@
+.character-container {
+  max-width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.character-container__content {
+  padding: 1rem;
+}
+.character-container__content > * {
+  margin-top: 1rem;
+}
+
+@media (min-width: 600px) {
+  .character-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .character-container__content { 
+    display: flex;
+    flex-direction: column;
+  }
+
+  .character-container > * {
+    width: 100%;
+  }
+}
+
+@media (min-width: 901px) {
+  .character-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

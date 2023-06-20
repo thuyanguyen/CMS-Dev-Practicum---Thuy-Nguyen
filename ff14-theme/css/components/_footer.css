@@ -1,0 +1,10 @@
+footer {
+  background-color: {{ theme.global_colors.primary.color }};
+  color: {{ theme.global_colors.accent_2.color }};
+  padding: 2rem 3rem;
+  margin-top:3rem;
+}
+
+footer>p {
+  font-size: 0.8rem;
+}
